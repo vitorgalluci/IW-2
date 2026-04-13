@@ -1,0 +1,72 @@
+Aqui está tudo pronto para você colar em um arquivo HTML (com as respostas comentadas usando `//` como pediu):
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabalho DOM</title>
+
+  <script>
+    // 1. O que é DOM?
+    // DOM (Document Object Model) é uma representação da página HTML em forma de árvore.
+    // Ele permite que o JavaScript acesse e modifique elementos, textos e atributos da página.
+
+    // 2. O que é um nó (node)?
+    // Um nó é cada parte do DOM. Pode ser:
+    // - Elemento: tags HTML (ex: <p>, <div>)
+    // - Atributo: propriedades dos elementos (ex: id, class)
+    // - Texto: conteúdo dentro das tags
+
+    // 3. Métodos:
+    // getElementById(): seleciona um elemento pelo ID
+    // querySelector(): seleciona o PRIMEIRO elemento que corresponde a um seletor CSS
+    // querySelectorAll(): seleciona TODOS os elementos que correspondem ao seletor
+
+    // 4. innerHTML vs innerText
+    // innerHTML: lê ou altera o conteúdo HTML (interpreta tags)
+    // innerText: lê ou altera apenas o texto visível (não interpreta HTML)
+
+    // 5. O que são eventos?
+    // Eventos são ações que acontecem na página, como cliques ou mudanças.
+    // Exemplos:
+    // onclick: quando clica
+    // onchange: quando um valor muda
+    // onmouseover: quando passa o mouse
+
+    function mudarTexto() {
+      document.getElementById("texto").innerText = "Texto alterado!";
+    }
+
+    function mudarCor() {
+      document.body.style.backgroundColor = "lightblue";
+    }
+
+    let contador = 0;
+    function contar() {
+      contador++;
+      document.getElementById("contador").innerText = contador;
+    }
+  </script>
+</head>
+
+<body>
+
+  <h1>Minha Página</h1>
+
+  <p id="texto">Texto original</p>
+  <button onclick="mudarTexto()">Clique aqui</button>
+
+  <hr>
+
+  <h2>Desafio: Mudar cor de fundo</h2>
+  <button onclick="mudarCor()">Mudar cor</button>
+
+  <hr>
+
+  <h2>Desafio: Contador</h2>
+  <p>Contador: <span id="contador">0</span></p>
+  <button onclick="contar()">Contar</button>
+
+</body>
+</html>
