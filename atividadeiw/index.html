@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>atividade iw Lucas e Vitor</title>
+    <style>
+        section { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <section>
+        <input type="text" id="input1" placeholder="texto 1">
+        <button onclick="exercicio1()">mostrar 1</button>
+        <p id="p1"></p>
+
+        <input type="text" id="inputNome" placeholder="seu nome">
+        <button onclick="exercicio2()">saudação</button>
+        <p id="p2"></p>
+    </section>
+
+    <section>
+        <input type="number" id="inputIdade" placeholder="idade">
+        <button onclick="exercicio3()">verificar idade</button>
+        <p id="p3"></p>
+    </section>
+
+    <section>
+        <button onclick="exercicio4()">cor aleatoria</button>
+        <button onclick="exercicio5()">modo preto e branco</button>
+    </section>
+
+    <section>
+        <input type="text" id="inputlista" placeholder="item lista">
+        <button onclick="adicionarItem()">adicionar e clique no item para remover</button>
+        <ul id="minhalista"></ul>
+    </section>
+
+    <section>
+        <input type="number" id="inputNum" placeholder="par ou impar">
+        <button onclick="exercicio8()">checar numero</button>
+        <p id="p8"></p>
+
+        <input type="password" id="inputsenha" placeholder="senha" oninput="exercicio9()">
+        <p id="p9"></p>
+    </section>
+
+    <section>
+        <h3>cadastro de Nomes</h3>
+        <input type="text" id="nomecadastro" placeholder="nome">
+        <button onclick="cadastrarnome()">Cadastrar</button>
+        <p id="contador">total: 0</p>
+        <ul id="listacadastro"></ul>
+    </section>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
